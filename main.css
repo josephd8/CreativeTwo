@@ -1,0 +1,48 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 25px;
+    height: 100%;
+}
+
+h1 {
+   margin: auto;
+}
+
+.top {
+    text-align: center;
+    background-color: #1E2064;
+    margin: auto !important;
+    color: #FFF;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#left {
+	background-color: #8BB9ED;
+	height: 100%;
+}
+
+#right {
+	background-color: azure;
+	height: 100%;
+}
